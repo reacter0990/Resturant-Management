@@ -1,0 +1,66 @@
+.titles {
+    animation: moveBox 0.5s ease-out forwards, rotateEffect 1s ease 0.5s forwards;
+}
+
+.cardContainer {
+  transform: translateX(120%);
+  animation: cardAnimation 0.5 ease-out forwards;
+  animation-delay: .5s;
+  animation-duration: .5s;
+}
+
+.cart_items_animation_1 {
+  transform: translateX(0) rotate(0);
+  animation: cart_items_animation_1 0.5 ease-out forwards;
+  animation-duration: .2s;
+  animation-delay: 1s;
+}
+
+.cart_items_animation_2 {
+  transform: translateX(0) rotate(0);
+  animation: cart_items_animation_2 0.5 ease-out forwards;
+  animation-duration: .2s;
+  animation-delay: 1.5s;
+}
+
+@keyframes moveBox {
+    0% { transform: translateX(-100%) rotate(0deg)}
+    50% { transform: translateX(75px) rotate(15deg); }
+    75% { transform: translateX(0) rotate(-10deg); }
+    100% { transform: translateX(0) rotate(0deg) }
+}
+
+@keyframes cardAnimation {
+  0% { transform: translateX(120%);}
+  100% { transform: translateX(-50%);}
+}
+
+@keyframes cart_items_animation_1 {
+  0% { transform: translateX(0) rotate(0) }
+  100% {transform: translateX(-50px) rotate(-30deg)}
+}
+
+@keyframes cart_items_animation_2 {
+  0% { transform: translateX(0) rotate(0) }
+  100% {transform: translateX(-100px) rotate(-60deg)}
+}
+
+
+  
+/* @keyframes rotateEffect {
+    0% {
+      transform: translateX(200px) rotate(0deg); 
+    }
+    60% {
+      transform: translateX(200px) rotate(15deg); 
+    }
+    80% {
+      transform: translateX(208px) rotate(-10deg);
+    }
+    90% {
+      transform: translateX(200px) rotate(5deg); 
+    }
+    100% {
+      transform: translateX(0) rotate(0deg); 
+    }
+  } */
